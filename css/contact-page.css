@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contact-page {
+    /*background-color: #ebebeb;*/
+    /*height: 100vh;*/
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    /*justify-content: center;*/
+    background-color: #140C1F;
+
+    /*border: 2px solid #cc005f;*/
+    padding-bottom: 20px;
+}
+
+.contact-page h1 {
+    width: 100%;
+    padding-top: 100px;
+    color: #cc005f;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    /*margin-top: 0;*/
+    /*margin-bottom: .6rem;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contact-info {
+    /*margin: 4.8rem auto 0;*/
+    font-family: "poppins-regular", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+
+
+
+}
+
+.contact-info .icon {
+    margin-bottom: 30px;
+}
+
+.contact-info .icon i {
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+
+.contact-info h5 {
+    color: #cc005f;
+    /*margin-bottom: 20px;*/
+    padding-bottom: 10px;
+
+}
+
+
+.contact-info p {
+    color: #6e6e6e;
+}
+
+.contact-phone {
+    padding-right: 50px;
+}
+
+.contact-location{
+    padding-right: 50px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .contact-info{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .contact-page h1 {
+        font-size: 38px;
+    }
+
+
+    .contact-info .icon i {
+        font-size: 35px;
+    }
+
+    .contact-info p {
+        font-size: 20px;
+    }
+
+    /*.contact-location {
+        margin-top: 20px;
+    }*/
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .contact-page h1 {
+        font-size: 35px;
+    }
+    .contact-info .icon i {
+        font-size: 25px;
+    }
+    .contact-info .icon {
+        margin-bottom: 20px;
+    }
+    .contact-info h5 {
+        font-size: 18px;
+    }
+    .contact-info p {
+        font-size: 18px;
+    }
+    .contact-phone {
+         padding-right: 0px;
+    }
+
+    .contact-location{
+        padding-right: 0px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .contact-page h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .contact-phone,
+    .contact-email {
+        margin-bottom: 20px;
+    }
+    .contact-info .icon {
+        margin-bottom: 10px;
+    }
+
+}
+

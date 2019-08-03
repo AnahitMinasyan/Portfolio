@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.resume-page{
+    background-color: #ebebeb;
+    /*height: 100vh;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.resume-page h1{
+    width: 100%;
+    padding-top: 100px;
+    color: #cc005f;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    /*margin-top: 0;*/
+    /*margin-bottom: .6rem;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.resume-page h2 {
+    font-family: "poppins-semibold", serif;
+    font-size: 24px;
+    color: #313131;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.resume-header {
+    width: 100%;
+    text-align: center;
+
+}
+
+.resume-header h2 {
+    color: #cc005f;
+    font-size: 22px;
+}
+
+.resume-work-exp-block,
+.resume-education-block{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.resume-work-exp {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+}
+
+.resume-work-exp .timeline-ico {
+    height: 40px;
+    width: 40px;
+    line-height: 2.5rem;
+    background: #313131;
+    border-radius: 50%;
+    color: #FFFFFF;
+    margin-left: -2.4rem;
+    text-align: center;
+}
+
+.timeline-ico i {
+    /*position: relative;*/
+    /*left: .05rem;*/
+    /*top: .2rem;*/
+}
+
+.timeline-header {
+
+    width: 35%;
+    padding-right: 90px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.timeline-header p {
+
+   text-transform: uppercase;
+}
+
+.timeline-content {
+    padding-left: 60px;
+    text-align: left;
+    width: 35%;
+    padding-top: 10px;
+}
+
+.timeline-content h4 {
+    /*position: relative;*/
+    padding-bottom: 1.8rem;
+}
+
+.timeline-content h4::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+.fa-briefcase:before {
+    content: "\f0b1";
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .resume-page h1 {
+        font-size: 38px;
+    }
+
+
+    .timeline-content {
+        padding-left: 30px;
+
+    }
+
+    .resume-work-exp {
+        width: 100%;
+        }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .resume-page h1 {
+        font-size: 35px;
+    }
+
+    .resume-page h2 {
+        font-size: 22px;
+    }
+
+    .resume-work-exp {
+        width: 100%;
+    }
+
+
+    .timeline-header {
+        width: 30%;
+    }
+
+    .timeline-content {
+        width: 40%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .resume-page h1 {
+        font-size: 30px;
+    }
+
+    .resume-page h2 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .timeline-content {
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .timeline-header {
+        text-align: center;
+        width: 100%;
+        padding-right: 0px;
+    }
+    .timeline-content h4::after {
+      width: 0px;
+    }
+
+    .resume-work-exp .timeline-ico {
+         margin-left: 0;
+
+    }
+
+    .timeline-content h4 {
+        padding-bottom: 0px;
+    }
+
+    .resume-work-exp {
+        padding-top: 0.5rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

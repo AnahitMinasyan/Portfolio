@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-page {
+
+    padding-bottom: 100px;
+}
+
+.portfolio-page h1 {
+    width: 100%;
+    padding-top: 100px;
+    color: #cc005f;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.portfolio-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 83%;
+    margin: 0 auto;
+}
+
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 83%;
+    justify-content: space-around;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.portfolio-content hr {
+    display: none;
+}
+
+.portfolio-content img {
+    width: 350px;
+    height: 250px;
+}
+
+.portfolio-site-about {
+    width: 40%;
+
+}
+
+.portfolio-site-about h2 {
+    padding-bottom: 70px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.portfolio-site-about p {
+    font-size: 23px;
+    color: #6e6e6e;
+}
+
+.portfolio-site{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 2px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #cc005f;
+}
+
+.portfolio-buttons{
+    padding-top: 260px;
+}
+
+#prevBtn {
+    /*position: absolute;*/
+
+    top: 50%;
+    z-index: 10;
+    left: 25%;
+    font-size: 30px;
+    cursor: pointer;
+    height: 30px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: #cc005f;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    margin-top: 25%;
+}
+
+#nextBtn {
+    /*position: absolute;*/
+    top: 50%;
+    z-index: 10;
+    font-size: 30px;
+    cursor: pointer;
+    right: 25%;
+    height: 30px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: #cc005f;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+    margin-top: 25%;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .portfolio-site-about h2 {
+        padding-bottom: 50px;
+        font-size: 28px;
+    }
+
+
+    .portfolio-site-about p {
+        font-size: 22px;
+    }
+    .portfolio-content {
+        width: 85%;
+    }
+
+    .portfolio-content {
+        width: 100%;
+    }
+    .portfolio-page-content{
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .portfolio-page h1 {
+        font-size: 38px;
+    }
+
+    .portfolio-page-content{
+        width: 100%;
+    }
+
+
+    .portfolio-content img {
+        width: 300px;
+        height: 240px;
+    }
+   .portfolio-site-about h2 {
+       font-size: 26px;
+   }
+
+    .portfolio-site-about p {
+        font-size: 20px;
+    }
+
+    .dot{
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .portfolio-page h1 {
+        font-size: 35px;
+    }
+
+    #nextBtn,
+    #prevBtn{
+        padding: 12px;
+    }
+
+    .portfolio-content {
+        width: 95%;
+    }
+
+    .portfolio-content img {
+        width: 240px;
+        height: 200px;
+    }
+
+    .portfolio-site-about h2 {
+        font-size: 22px;
+    }
+    .portfolio-site-about p {
+        font-size: 18px;
+    }
+    .dot {
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .portfolio-content img {
+        width: 240px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .portfolio-page h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-site-about h2 {
+        text-align: center;
+    }
+
+    .portfolio-site {
+        flex-direction: column;
+    }
+
+    .portfolio-site-about {
+        width: 100%;
+    }
+
+    .portfolio-site-about h2 {
+        padding-bottom: 25px;
+    }
+
+    .portfolio-buttons {
+        padding-top: 357px;
+    }
+
+    #nextBtn, #prevBtn {
+        padding: 10px;
+    }
+    .portfolio-content {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+   .portfolio-content hr{
+       display: block;
+        color: #6e6e6e;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+    }
+    .dot {
+        font-size: 14px;
+    }
+}

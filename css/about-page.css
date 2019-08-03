@@ -1,0 +1,420 @@
+*{
+        padding: 0;
+        margin: 0;
+}
+
+.about-page {
+        /*height: 100vh;*/
+        width: 100%;
+        /*background-color: blue;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+
+}
+.about-page h1 {
+        width: 100%;
+        padding-top: 100px;
+        color: #cc005f;
+        font-family: "poppins-medium", sans-serif;
+        font-size: 40px;
+        line-height: 1.5;
+        /*margin-top: 0;*/
+        /*margin-bottom: .6rem;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        text-align: center;
+}
+
+.about-page-colums{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 60%;
+        text-align: center;
+        margin: 0px auto;
+        margin-top: 80px;
+        justify-content: space-around;
+
+}
+
+.about-page-colums .profile,
+.about-page-colums .skills {
+        width: 30%;
+        color: #313131;
+
+}
+
+.profile h2,
+.skills h2 {
+        margin-bottom: 30px;
+}
+
+
+
+
+
+.profile ul {
+        list-style: none;
+        text-align: start;
+        /*margin-left: 260px;*/
+        padding-left: 10px;
+}
+
+.profile strong {
+        font-family: "poppins-bold", sans-serif;
+        color: #313131;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 22px;
+        line-height: 3rem;
+}
+
+.profile span {
+        display: block;
+        font-family: "poppins-regular", sans-serif;
+        color: #888888;
+        font-size: 20px;
+        line-height: 1;
+}
+
+
+.about-border{
+        border-left: 2px solid #140C1F;
+        margin-left: 40px;
+}
+
+.skills{
+
+        padding-right: 30px
+}
+
+.skills h2 {
+        margin-right: 60px;
+}
+
+.skill-bars {
+        list-style: none;
+        /*margin-left: 250px;*/
+        /*padding-left: 60px;*/
+        margin-left: 60px;
+}
+
+.skill-bars li {
+        text-transform: uppercase;
+        line-height: 1.8;
+        text-align: start;
+}
+
+.skill-bars strong {
+        color: #888888;
+        font-size: 22px;
+}
+
+
+.skill-bars h2 {
+        /*margin-bottom: 10px;*/
+        /*margin-top: 20px;*/
+        text-align: start;
+}
+
+.skill-bars li>strong:hover {
+        color: #cc005f;
+
+}
+
+.about-interests {
+        width: 45%;
+        margin: 0 auto;
+}
+
+.about-interests h2 {
+        color: #cc005f;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 32px;
+}
+
+.about-interests p {
+        color: #888888;
+        font-size: 20px;
+        text-align: center;
+
+}
+
+.about-buttons {
+        display: flex;
+        width: 60%;
+        margin: 30px auto;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    margin-top: 50px;
+}
+
+.about-buttons button {
+        width: 250px;
+        height: 55px;
+        text-transform: uppercase;
+
+}
+
+.button-hire-me {
+        background-color: white;
+        border: 2px solid #140C1F;
+        font-size: 18px;
+        margin-right: 30px;
+        font-weight: 700;
+}
+
+.button-cv-downloader {
+
+        background-color:#140C1F;
+        border: 2px solid #140C1F;
+        color: white;
+        font-size: 18px;
+        margin-left: 30px;
+        font-weight: 700;
+}
+@media only screen and (max-width: 1200px) {
+
+        .about-page-colums .profile, .about-page-colums .skills {
+                width: 32%;
+        }
+
+
+        .about-buttons button {
+                width: 230px;
+        }
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+
+
+
+        .about-page-colums{
+                width: 80%;
+        }
+        .about-page h1{
+                font-size: 38px;
+        }
+
+        .profile h2, .skills h2 {
+                font-size: 24px;
+        }
+        .profile strong {
+                font-size: 20px;
+        }
+
+        .skill-bars strong {
+                font-size: 20px;
+        }
+        .about-interests {
+                width: 80%;
+        }
+
+        .about-buttons {
+                width: 80%;
+        }
+
+
+        .about-buttons button {
+                width: 200px;
+        }
+
+
+        .about-interests{
+                width: 55%;
+        }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+        .about-page-colums {
+                width: 100%;
+        }
+
+        .about-page h1{
+                font-size: 35px;
+        }
+
+        .profile h2, .skills h2 {
+                font-size: 22px;
+        }
+
+        .profile strong {
+                font-size: 18px;
+        }
+
+        .profile span{
+                font-size: 18px;
+        }
+
+        .skill-bars strong {
+                font-size: 18px;
+        }
+
+        .about-interests h2 {
+                font-size: 20px;
+        }
+
+        .about-interests {
+                width: 90%;
+        }
+
+        .about-interests p {
+                font-size: 18px;
+        }
+        .about-buttons button {
+                width: 180px;
+        }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+        .about-page-colums {
+                flex-direction: column;
+        }
+
+        .about-page-colums .profile, .about-page-colums .skills {
+                width: 100%;
+        }
+
+        .about-page-colums .profile {
+                /*border-bottom: 1px solid black;*/
+                margin-left: 20px;
+                margin-right: 20px;
+        }
+
+        .about-page-colums .skills {
+                margin-top: 20px;
+        }
+
+        .profile ul {
+                padding-left: 0px;
+        }
+
+        .skill-bars {
+                margin-left: 20px;
+        }
+
+        .skills h2::before {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 100px;
+                background: rgba(0, 0, 0, 0.2);
+                left: 0;
+                bottom: 0;
+                margin-top: 20px;
+                margin-bottom: 30px;
+        }
+
+        .about-page h1 {
+                font-size: 30px;
+        }
+
+        .about-page-colums {
+                margin-top: 30px;
+        }
+
+        .profile h2, .skills h2 {
+                margin-bottom: 20px;
+                font-size: 20px;
+        }
+
+        .profile strong {
+                font-size: 16px;
+        }
+
+        .profile span {
+                font-size: 16px;
+        }
+
+        .skill-bars strong {
+                font-size: 16px;
+        }
+
+        .about-interests h2 {
+                font-size: 18px;
+                margin-left: 0px;
+        }
+
+        .about-interests p {
+                font-size: 16px;
+        }
+
+
+        .about-buttons button {
+                width: 170px;
+                font-size: 16px;
+        }
+
+        .button-cv-downloader {
+                width: 170px;
+                margin-left: 0px;
+                font-size: 16px;
+        }
+        .button-hire-me{
+                width: 170px;
+                margin-right: 0px;
+                margin-bottom: 10px;
+                font-size: 16px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

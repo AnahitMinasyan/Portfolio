@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+#header-nav {
+    height: 90px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #140C1F;
+
+}
+
+.menu{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+
+}
+
+.menu_button {
+    display: none;
+}
+
+.menu li{
+    position: relative;
+    padding: 10px 20px;
+
+}
+
+.menu li > a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+    transition: 800ms;
+
+    }
+
+.menu li a:hover{
+    color: #cc005f;
+    border-radius: 10px;
+    border-bottom: 1px solid #cc005f;
+    padding-bottom: 6px;
+    font-size: 18px;
+
+}
+
+.menu-a.active-li{
+
+    /*display: block;*/
+    color: #cc005f;
+    border-radius: 10px;
+    border-bottom: 1px solid #cc005f;
+    padding: 6px 6px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    #header-nav{
+        position: absolute;
+        width: 300px;
+        /*height: 100%;*/
+
+    }
+
+    .menu_button{
+        display: block;
+        position: absolute;
+        top: 42px;
+        left: 350px;
+        cursor: pointer;
+
+
+    }
+
+    .menu_button span{
+        width: 50px;
+        height: 6px;
+        background: white;
+        display: block;
+        margin-top: 6px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+    #header-nav ul li a {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding: 0px 25px;
+        margin: 10px 20px;
+        border-radius: 10px;
+        border-bottom: 1px solid #cc005f;
+        transition: background 0.3s;
+        /*display: none;*/
+    }
+
+    #header-nav ul li a:hover{
+        background: #cc005f;
+    }
+
+
+
+    #menu{
+        height: 80vh;
+         display: none;
+        margin-top: 35px;
+        background: #140C1F;
+    }
+
+   #menu.active{
+        display: block;
+    }
+
+    #header-nav ul li a.active{
+        background: #cc005f;
+    }
+
+
+
+    /*.menu {*/
+        /*display: none;*/
+        /*position: absolute;*/
+        /*top: 120px;*/
+        /*width: 100%;*/
+        /*text-align: center;*/
+        /*flex-direction: column;*/
+        /*background-color: #000;*/
+        /*opacity: 0.9;*/
+    /*}*/
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
